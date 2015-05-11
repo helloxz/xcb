@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-3-8, 14:33:41
+    Author     : xiaoz
+*/
+body,ul,li{
+    margin: 0;
+    padding:0;
+    font-size:14px;
+    font-family: '微软雅黑';
+}
+
+#header{
+    width: 100%;
+    background-color: #222222;
+    box-shadow: 0px 3px 3px #888888;
+/*    position: fixed;
+    top:0;
+    z-index: 2;*/
+}
+#header img{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#menu{
+    margin-top:1px;
+}
+#menu ul{
+    float: right;
+}
+#m1{
+    margin-top:1em;
+    background-color: #222222;
+    border:0;
+}
+#m1 a:hover{
+    color:#ffffff;
+}
+#m1 li{
+    border-bottom: 2px solid #222222;
+}
+#m1 li:hover{
+    border-bottom: 2px solid #126fc6;
+}
+.navbar navbar-default{
+    padding-top: 1em;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #222222;
+    color: #ffffff;
+    
+}
+
+#con{
+    margin-top:3%;
+}
+#con img{
+    width:160px;
+    height:160px;
+    text-align: center;
+    display:table-cell;vertical-align:middle;text-align:center;
+    border: 1px solid #30373F;
+}
+#news{  
+    margin-top:3%;
+}
+#tabs li a:hover{
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+#tabs li{
+    margin-right: 16px;
+}
+#news ul{
+    list-style: none;
+}
+#hot{
+    display: block;
+}
+#hot li{
+    padding-top:6px;
+}
+
+
+#quick{
+    display: none;
+}
+#quick li{
+    padding-top:6px;
+}
+
+#fun{
+    width:90%;
+    height:380px;
+    border:1px solid #ddd;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+}
+
+
+#banner{
+    width:100%;
+    background-color: #FFFFFF;
+}
+
+#footer{
+    width:100%;
+    background-color:#30373F;
+    color:#ffffff;
+    text-align: center;
+    padding: 10px;
+    line-height: 24px;
+    font-size:13px;
+    margin-top:3%;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+
+.nav-tabs-s > li.active > a, .nav-tabs-s > li.active > a:hover, .nav-tabs-s > li.active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #e74c3c;
+    border-color: #e74c3c #e74c3c transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: default;
+}
+
+.nav-tabs-s {
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 1px;
+}
+
