@@ -186,7 +186,7 @@ body,ul,li{
     padding: 5px;
     font-family: '微软雅黑';
     width: 320px;
-    height: 100px;
+    height: 140px;
 }
 #reg-table textarea:hover{
     border: 1px solid #3388FF;
@@ -211,3 +211,25 @@ body,ul,li{
 
 }
 
+.btn{
+    color: #FFFFFF;
+    background-color: #3385FF;
+    font-family: '微软雅黑';
+    width: 120px;
+    height: 36px;
+    border:0;
+    border-radius: 0;
+}
+
+#loading{
+    width: 240px;
+    height: 180px;
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    background-color: #FFFFFF;
+    display: none;
+}
+#all{
+    opacity: 1;
+}
