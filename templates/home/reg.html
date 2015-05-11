@@ -19,19 +19,19 @@
                     <div class="col-lg-10 col-md-offset-1">
                         <div class="col-lg-12">
                             <form method="post" name="reg-form" action="" id="reg-form">
-                                <table>
+                                <table id="reg-table" >
                                     <tr>
-                                    <td>姓名：</td>
-                                    <td>
+                                    <td width="10%;">姓名：</td>
+                                    <td width="60%;">
                                         <input type="text" name="name" />
                                     </td>
                                     </tr>
-                                    <tr>
+                                    <tr id="class">
                                         <td>班级：</td>
                                         <td>
                                             <input name="thirteen" type="radio" value="" />13级
                                             <input name="fourteen" type="radio" value="" />14级 
-                                            <input type="text" name="class" placeholder="网络1班" />
+                                            <input type="text" name="class" placeholder="网络1班" style="width:94px;" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -66,8 +66,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>验证码：</td>
-                                        <td>官方</td>
+                                        <td colspan="2">
+                                            验证码：<input type="text" name="" style="width:80px;" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>

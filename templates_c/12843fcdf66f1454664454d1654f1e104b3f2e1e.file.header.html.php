@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-11 17:29:42
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-11 18:00:40
          compiled from "D:\wwwroot\xcb\templates\home\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:17543554f6111a44b16-07735652%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '12843fcdf66f1454664454d1654f1e104b3f2e1e' => 
     array (
       0 => 'D:\\wwwroot\\xcb\\templates\\home\\header.html',
-      1 => 1431336577,
+      1 => 1431338438,
       2 => 'file',
     ),
   ),
@@ -45,15 +45,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                   <li><a href="http://www.sczyxy.cn/index.asp" title="四川职业技术学院官网" target="_blank" rel="nofollow">川职院</a></li>
                                   <li><a href="http://125.67.64.226:9009/Default.aspx?ReturnUrl=%2f" title="四川职业技术学院 - 计算机科学系" target="_blank" rel="nofollow">计科系</a></li>
                                   <li><a href="#">部门动态</a></li>
-                                  <li class="dropdown">
+                                  <li class="dropdown" id="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">活动报名</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">网页设计大赛</a></li>
+                                    <ul class="dropdown-menu" id="dropdown-menu">
+                                        <li><a href="reg.php">网页设计大赛</a></li>
                                         <li><a href="#">EJB</a></li>
                                         <li><a href="#">Jasper Report</a></li>
                                      </ul>
                                   </li>
-                                  <li class="dropdown">
+                                  <li class="dropdow">
                                      <a href="#" >
                                         关于我们 <b class="caret"></b>
                                      </a>

@@ -145,3 +145,69 @@ body,ul,li{
     padding-bottom: 1px;
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #222222;
+    color: #555;
+}
+
+#dropdown-menu{
+    background-color: #222222;
+}
+#dropdown-menu li{
+    background-color: #222222;
+    border-bottom: 2px solid #222222;
+
+}
+#dropdown-menu li:hover{
+    background-color: #126fc6;
+    border-bottom: 2px solid #126fc6;
+    
+}
+#dropdown-menu ul{
+    background-color: #222222;
+}
+#dropdown-menu a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:#FFFFFF;
+}
+#dropdown-menu a:hover{
+    background-color: #222222;
+    background-color: #126fc6;
+
+}
+
+#reg-table{
+    width: 100%;
+    
+}
+#reg-table textarea{
+    border: 1px solid #BCBCBC;
+    padding: 5px;
+    font-family: '微软雅黑';
+    width: 320px;
+    height: 100px;
+}
+#reg-table textarea:hover{
+    border: 1px solid #3388FF;
+}
+#reg-form tr{
+    height: 40px;
+}
+#reg-form td{
+    padding: 8px;
+}
+#reg-form input{
+    border: 1px solid #BCBCBC;
+    padding: 5px;
+    font-family: '微软雅黑';
+    width: 200px;
+}
+#class input{
+    width: 18px;
+}
+#reg-form input:hover{
+    border: 1px solid #3388FF;
+
+}
+

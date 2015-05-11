@@ -13,6 +13,12 @@ $(document).ready(function(){
         $("#hot").hide();
         $("#quick").show();
     });
+    $("#dropdown").mouseover(function(){
+    	$("#dropdown-menu").show();
+    });
+    $("#dropdown").click(function(){
+    	$("#dropdown-menu").hide();
+    });
 });
 
 

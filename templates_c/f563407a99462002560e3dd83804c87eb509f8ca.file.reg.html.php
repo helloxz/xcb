@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-10 16:36:42
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-11 18:24:22
          compiled from "D:\wwwroot\xcb\templates\home\reg.html" */ ?>
 <?php /*%%SmartyHeaderCode:28063554f62013eb5a3-46163698%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f563407a99462002560e3dd83804c87eb509f8ca' => 
     array (
       0 => 'D:\\wwwroot\\xcb\\templates\\home\\reg.html',
-      1 => 1431268599,
+      1 => 1431339859,
       2 => 'file',
     ),
   ),
@@ -47,19 +47,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <div class="col-lg-10 col-md-offset-1">
                         <div class="col-lg-12">
                             <form method="post" name="reg-form" action="" id="reg-form">
-                                <table>
+                                <table id="reg-table" >
                                     <tr>
-                                    <td>姓名：</td>
-                                    <td>
+                                    <td width="10%;">姓名：</td>
+                                    <td width="60%;">
                                         <input type="text" name="name" />
                                     </td>
                                     </tr>
-                                    <tr>
+                                    <tr id="class">
                                         <td>班级：</td>
                                         <td>
                                             <input name="thirteen" type="radio" value="" />13级
                                             <input name="fourteen" type="radio" value="" />14级 
-                                            <input type="text" name="class" placeholder="网络1班" />
+                                            <input type="text" name="class" placeholder="网络1班" style="width:94px;" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -94,8 +94,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>验证码：</td>
-                                        <td>官方</td>
+                                        <td colspan="2">
+                                            验证码：<input type="text" name="" style="width:80px;" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
