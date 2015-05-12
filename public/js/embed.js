@@ -3,7 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+var e = 0;
+var f = 0;
 $(document).ready(function(){
     var width = document.body.clientWidth;                  //获取浏览器宽度
     var height = document.body.clientHeight;                 //获取浏览器高度
@@ -47,7 +52,8 @@ function check_img(){
                 }
                 if (data == 1) {
                     document.getElementById("msg-img").innerHTML = '<span style = "color:green;">√</span>';
-                    return true;
+                    a = 1;
+                    return a;
                 };
     		});
     	};
@@ -76,7 +82,8 @@ function check_mail() {
             };
             if (data == 4) {
                 document.getElementById("msg-mail").innerHTML = '<span style = "color:green;">√</span>';
-                return true;
+                b = 2;
+                return b;
             };
         });
     };
@@ -102,7 +109,8 @@ function check_tel(){
     };
     if (myreg.test(tel)) {
         document.getElementById("msg-tel").innerHTML = '<span style = "color:green;">√</span>';
-        return true;
+        c = 3;
+        return c;
     };
 }
 //判断班级
@@ -114,7 +122,8 @@ function check_cla(){
     }
     else{
         document.getElementById("msg-cla").innerHTML = '<span style = "color:green;">√</span>';
-        return true;
+        d= 4;
+        return d;
     }
 }
 //判断姓名
@@ -127,7 +136,8 @@ function check_name(){
     }
     else{
         document.getElementById("msg-name").innerHTML = '<span style = "color:green;">√</span>';
-        return true;
+        e = 5;
+        return e;
     }
 }
 //判断QQ号
@@ -144,13 +154,15 @@ function check_qq(){
     }
     else{
         document.getElementById("msg-qq").innerHTML = '<span style = "color:green;">√</span>';
-        return true;
+        f = 6
+        return f;
     }
 
 }
 
 //将表单提交处理
 function send_form(){
+    
     var name = document.getElementById("name").value;             //获取姓名
     var grade = document.getElementById("grade").value;           //获取年纪
     var cla = document.getElementById("cla").value;               //获取班级
@@ -161,14 +173,44 @@ function send_form(){
     var verification = document.getElementById("verification").value;//获取验证码
     var ip = document.getElementById("ip").innerHTML;             //获取IP
     var get_info = document.getElementById("get_info").innerHTML;   //获取操作系统
-    $("#all").css("opacity","0.5");
-    $("#loading").show();
-    $.post("./receive.php",{name:name,grade:grade,cla:cla,tel:tel,email:email,qq:qq,other:other,verification:verification,ip:ip,get_info:get_info},function(data,status){
-        //alert(data);
-        if (status == 'success') {
-            document.getElementById("msg").innerHTML = "报名成功！";
-        }
-    });
+
+    if ((a == 1) && (b == 2) && (c == 3) && (d == 4) && (e == 5) && (f == 6)) {
+        $("#all").css("opacity","0.5");
+        $("#loading").show();
+        $.post("./receive.php",{name:name,grade:grade,cla:cla,tel:tel,email:email,qq:qq,other:other,verification:verification,ip:ip,get_info:get_info},function(data,status){
+            //alert(data);
+
+            if (status == 'success') {
+                document.getElementById("msg").innerHTML = "<span style = 'color:green;'>报名成功</span>";
+                setTimeout("jump_query()",2000);
+            }
+        });
+    }
+    else{
+        check_img();
+        check_mail();
+        check_tel();
+        check_cla();
+        check_name();
+        check_qq();
+
     }
 
+    
+    }
 
+//跳转到查询页面
+function jump_query(){
+    window.location.href = "./query.php";
+}
+
+//查询页面
+function query(){
+
+    var email = document.getElementById("email").value;
+    
+
+    $.post("./query.php?f=select",{email:email},function(data,status){
+        alert(data);
+    });
+}

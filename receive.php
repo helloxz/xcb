@@ -28,7 +28,10 @@
 	$smtpuser = "service@xiaoz.me";//SMTP服务器的用户帐号
 	$smtppass = "xiaoz1993.";//SMTP服务器的用户密码
 	$mailsubject = '网页设计大赛报名成功';//邮件主题
-	$mailbody = '亲爱的'.$name.'感谢您参加计科系网页设计大赛！';//邮件内容
+	$mailbody = '亲爱的'.$name.'感谢您参加计科系网页设计大赛！'."<br /><div style = 'color:#999;'>
+		此邮件由系统自动发送，若不是您本人请求，请直接忽略。
+	</div>";//邮件内容
+
 	$mailtype = "HTML";//邮件格式（HTML/TXT）,TXT为文本邮件
 	##########################################
 	$smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
