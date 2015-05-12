@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-12 16:50:41
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-12 17:32:52
          compiled from "D:\wwwroot\xcb\templates\home\reg.html" */ ?>
 <?php /*%%SmartyHeaderCode:28063554f62013eb5a3-46163698%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f563407a99462002560e3dd83804c87eb509f8ca' => 
     array (
       0 => 'D:\\wwwroot\\xcb\\templates\\home\\reg.html',
-      1 => 1431420609,
+      1 => 1431443511,
       2 => 'file',
     ),
   ),
@@ -39,7 +39,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"><?php echo '</script'; ?>
 >
         <?php echo '<script'; ?>
- src="./public/js/embed.js"><?php echo '</script'; ?>
+ src="./public/js/embed.js?ver=1.0"><?php echo '</script'; ?>
 >
     </head>
     <body>
@@ -53,7 +53,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <div class="col-lg-10 col-md-offset-1">
                         <div class="col-lg-12">
                             <form method="post" name="reg-form"  id="reg-form">
-                                <table id="reg-table" >
+                                <table id="reg-table">
                                     <tr>
                                     <td width="10%;">姓名：</td>
                                     <td width="60%;">
@@ -93,8 +93,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>其它说明</td>
-                                        <td></td>
+                                        <td colspan="2">其它说明（团队比赛可填写此项，包含团队名称及成员）</td>
+                                        
                                     </tr>
                                     <tr>
                                         <td  colspan="2">
@@ -105,8 +105,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     <tr>
                                         <td colspan="2">
                                             验证码：<input type="text" name="verification" style="width:80px;" id="verification" onblur="check_img();" />
-                                            <img src="./config/code_char.php" title="点击刷新" align="absbottom" onclick="this.src='./config/code_char.php?'+Math.random();" width="100" height="30" />
-                                            <a href="javascript:;" onclick="this.src='./config/code_char.php?'+Math.random();" title="点击更换验证码">看不清？</a>
+                                            <img src="./config/code_char.php" title="点击刷新" align="absbottom" onclick="this.src='./config/code_char.php?'+Math.random();" width="100" height="30" id="code_img" />
+                                            <a href="javascript:;" onclick="document.getElementById('code_img').src='./config/code_char.php?'+Math.random();" title="点击更换验证码">看不清？</a>
                                             <span id = "msg-img" style="color:red;"></span>
                                         </td>
                                     </tr>
@@ -114,7 +114,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         <td>
                                             <button type="button" id="submit" name="sublime" class="btn" onclick="return send_form();">提交</button>
                                         </td>
-                                        <td><button id="reset" name="reset" class="btn">清空</button></td>
+                                        <td><button id="reset" name="reset" class="btn" type="reset">清空</button></td>
                                     </tr>
                                 </table>
                             </form>
@@ -130,10 +130,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         	<div id="get_info"><?php echo $_smarty_tpl->tpl_vars['get_info']->value;?>
 </div>
         </div>
-        <div id="footer">
-            &COPY;2015 Powered by 计科系宣传部 沪ICP备11037377号-5<br />
-            Google地图 | 百度地图 | 本站使用恒创主机， 图片托管于七牛云
-        </div>
+        <!--载入底部-->
+        <?php echo $_smarty_tpl->getSubTemplate ("./footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
     </div>
         <div id="loading">
         	<center><img src="./public/img/loading.gif" width="60" height="60" /></center>

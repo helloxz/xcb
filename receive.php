@@ -20,6 +20,9 @@
 	$get_info = $_POST['get_info'];			//获取操作系统
 	$reg_time = time();						//注册时间
 
+	$q_url = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
+    $q_url = str_replace('receive.php', 'query.php', $q_url);
+
 	##########################################
 	$smtpserver = "smtp.exmail.qq.com";//SMTP服务器
 	$smtpserverport = 25;//SMTP服务器端口
@@ -28,7 +31,7 @@
 	$smtpuser = "service@xiaoz.me";//SMTP服务器的用户帐号
 	$smtppass = "xiaoz1993.";//SMTP服务器的用户密码
 	$mailsubject = '网页设计大赛报名成功';//邮件主题
-	$mailbody = '亲爱的'.$name.'感谢您参加计科系网页设计大赛！'."<br /><div style = 'color:#999;'>
+	$mailbody = '亲爱的'.$name."同学：<p style = 'text-indent:2em;'>您好，很高兴的通知您已成功参加由计算机科学系举办的网页设计大赛。您可以<a href = '$q_url'>点此查询</a>报名状态！若有疑问请联系管理员QQ:337003006，感谢您的支持！</p>"."<br /><div style = 'color:#999;'>
 		此邮件由系统自动发送，若不是您本人请求，请直接忽略。
 	</div>";//邮件内容
 

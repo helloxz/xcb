@@ -4,6 +4,8 @@
     $ip = $_SERVER["REMOTE_ADDR"];					//获取访客IP
     $get_info = get_os().' - '.get_broswer();			//获取操作系统及浏览器
 
+    
+
     $smarty->assign('ip',$ip);
     $smarty->assign('get_info',$get_info);
     $smarty->display('./home/reg.html');

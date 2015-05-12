@@ -114,7 +114,8 @@ body,ul,li{
 #footer{
     width:100%;
     background-color:#30373F;
-    color:#ffffff;
+    color:#A1A1A1;
+    font-size: 13px;
     text-align: center;
     padding: 10px;
     line-height: 24px;
@@ -232,4 +233,33 @@ body,ul,li{
 }
 #all{
     opacity: 1;
+}
+#query-form input{
+    width: 240px;
+    padding: 6px;
+    border:1px solid #B3B3B3;
+}
+#query-form input:hover{
+    width: 240px;
+    padding: 6px;
+    border:1px solid #3388FF;
+}
+#query-table {
+    
+    margin-top: 40px;
+}
+#query-table td,th{
+    padding: 8px;
+    border:1px solid #B3B3B3;
+}
+#query-table th{
+    background-color: #E7E7E7;
+}
+
+.query-btn{
+    width: 50px;
+}
+
+#q-form tr{
+    height: 50px;
 }

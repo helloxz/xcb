@@ -53,6 +53,6 @@
             }
 	}
 	
-    $db = new DateBase('192.168.0.112','root','mysqlroot','xsb');
+    $db = new DateBase('localhost','root','','xsb');
 ?>
 
