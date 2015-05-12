@@ -26,7 +26,7 @@
                     return $select;
             }
             function query($v,$con) {
-                    mysql_query("set names 'utf8'");//防止插入数据库的时候乱码
+                    mysql_query("set names 'utf8'");	//防止插入数据库的时候乱码
                     $query = mysql_query($v,$con);
                     return $query;
             }
@@ -53,6 +53,6 @@
             }
 	}
 	
-    $db = new DateBase('localhost','root','','xsb');
+    $db = new DateBase('192.168.0.112','root','mysqlroot','xsb');
 ?>
 
