@@ -115,12 +115,13 @@ body,ul,li{
     width:100%;
     background-color:#30373F;
     color:#A1A1A1;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     padding: 10px;
     line-height: 24px;
     font-size:13px;
-    margin-top:3%;
+    position: fixed;
+    bottom: 0;
 }
 
 .nav-tabs > li > a:hover {

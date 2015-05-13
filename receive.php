@@ -34,6 +34,9 @@
 	$mailbody = '亲爱的'.$name."同学：<p style = 'text-indent:2em;'>您好，很高兴的通知您已成功参加由计算机科学系举办的网页设计大赛。您可以<a href = '$q_url'>点此查询</a>报名状态！若有疑问请联系管理员QQ:337003006，感谢您的支持！</p>"."<br /><div style = 'color:#999;'>
 		此邮件由系统自动发送，若不是您本人请求，请直接忽略。
 	</div>";//邮件内容
+	$mailadmin = "亲爱的主人："."<p style = 'text-indent:2em;'>".$name."已经成功报名参加网页设计大赛啦，<a href = 'http://www.jikexi.top/admin/list.php'>点此查看</a>报名详情。</p>"."<div style = 'color:#999;'>
+		此邮件由系统自动发送，若不是您本人请求，请直接忽略。
+	</div>";
 
 	$mailtype = "HTML";//邮件格式（HTML/TXT）,TXT为文本邮件
 	##########################################
@@ -48,8 +51,10 @@
 		//执行插入
 		$query = $db->query($sql,$con);
 		echo "报名成功！";
-		//发送邮件
+		//发送邮件提醒用户
 		$smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype);
+		//发送邮件提醒管理员
+		$smtp->sendmail("xiaozblog@163.com", $smtpusermail, $mailsubject, $mailadmin, $mailtype);
 	}
 	
 	else{

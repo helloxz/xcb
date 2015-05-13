@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-11 14:01:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-13 15:18:50
          compiled from "D:\wwwroot\xcb\templates\home\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:2820254ff011b77ef79-68586244%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '31e9296fed1fcaf5c0672e476281b95e3b2e0f83' => 
     array (
       0 => 'D:\\wwwroot\\xcb\\templates\\home\\index.html',
-      1 => 1431345610,
+      1 => 1431501528,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="./public/css/style.css" rel="stylesheet">
+        <link href="./public/css/style.css?ver=1.0" rel="stylesheet">
         <?php echo '<script'; ?>
  src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"><?php echo '</script'; ?>
 >
@@ -131,10 +131,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
             
         </div>
-        <div id="footer">
-            &COPY;2015 Powered by 计科系宣传部 沪ICP备11037377号-5<br />
-            Google地图 | 百度地图 | 本站使用恒创主机， 图片托管于七牛云
-        </div>
+        <div style="margin-bottom:200px;"></div>
+        <?php echo $_smarty_tpl->getSubTemplate ("./footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
     </body>
 </html>
 <?php }} ?>

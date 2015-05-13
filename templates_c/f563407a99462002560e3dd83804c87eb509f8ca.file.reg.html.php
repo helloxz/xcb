@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-12 17:32:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-13 15:27:38
          compiled from "D:\wwwroot\xcb\templates\home\reg.html" */ ?>
 <?php /*%%SmartyHeaderCode:28063554f62013eb5a3-46163698%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f563407a99462002560e3dd83804c87eb509f8ca' => 
     array (
       0 => 'D:\\wwwroot\\xcb\\templates\\home\\reg.html',
-      1 => 1431443511,
+      1 => 1431501675,
       2 => 'file',
     ),
   ),
@@ -130,6 +130,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         	<div id="get_info"><?php echo $_smarty_tpl->tpl_vars['get_info']->value;?>
 </div>
         </div>
+        <div style="margin-bottom:200px;"></div>
         <!--载入底部-->
         <?php echo $_smarty_tpl->getSubTemplate ("./footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
